@@ -3,13 +3,13 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+group = 'com.github.steemboy'
 
 android {
     namespace 'ru.lea.data_layer'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ru.lea.data_layer"
         minSdk 23
         targetSdk 33
         versionCode 1
@@ -33,4 +33,17 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'com.google.code.gson:gson:2.9.1'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.steemboy'
+                artifactId = 'data_layer'
+                version = '1.0'
+            }
+        }
+    }
 }
