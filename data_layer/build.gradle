@@ -1,9 +1,10 @@
 plugins {
     id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
     id 'maven-publish'
 }
 group = 'com.github.steemboy'
+version = '1.0'
 
 android {
     namespace 'ru.lea.data_layer'
