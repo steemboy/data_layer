@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 group = 'com.github.steemboy'
-version = '1.0'
+version = '1.0.3'
 
 android {
     namespace 'ru.lea.data_layer'
@@ -14,7 +14,7 @@ android {
         minSdk 23
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.3"
     }
 
     buildTypes {
@@ -43,7 +43,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.steemboy'
                 artifactId = 'data_layer'
-                version = '1.0'
+                version = '1.0.3'
             }
         }
     }
