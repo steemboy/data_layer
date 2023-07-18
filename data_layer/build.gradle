@@ -43,7 +43,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.steemboy'
                 artifactId = 'data_layer'
-                version = '1.0.1'
+                version = '1.0'
             }
         }
     }
